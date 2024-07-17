@@ -9,7 +9,7 @@ struct Skeleton {
 
     init() {
         // Initialize the joints array with 24 identity matrices
-        self.joints = Array(repeating: simd_float4x4(1), count: 25)
+        self.joints = Array(repeating: simd_float4x4(1), count: 27)
     }
 }
 
@@ -135,6 +135,7 @@ extension 🥽AppModel {
                         .middleFingerMetacarpal, .middleFingerKnuckle, .middleFingerIntermediateBase, .middleFingerIntermediateTip, .middleFingerTip,
                         .ringFingerMetacarpal, .ringFingerKnuckle, .ringFingerIntermediateBase, .ringFingerIntermediateTip, .ringFingerTip,
                         .littleFingerMetacarpal, .littleFingerKnuckle, .littleFingerIntermediateBase, .littleFingerIntermediateTip, .littleFingerTip,
+                        .forearmWrist, .forearmArm,
                     ]
                     
                     for (index, jointType) in jointTypes.enumerated() {
@@ -160,6 +161,7 @@ extension 🥽AppModel {
                         .middleFingerMetacarpal, .middleFingerKnuckle, .middleFingerIntermediateBase, .middleFingerIntermediateTip, .middleFingerTip,
                         .ringFingerMetacarpal, .ringFingerKnuckle, .ringFingerIntermediateBase, .ringFingerIntermediateTip, .ringFingerTip,
                         .littleFingerMetacarpal, .littleFingerKnuckle, .littleFingerIntermediateBase, .littleFingerIntermediateTip, .littleFingerTip,
+                        .forearmWrist, .forearmArm,
                     ]
  
                     for (index, jointType) in jointTypes.enumerated() {
